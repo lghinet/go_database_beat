@@ -1,0 +1,55 @@
+{
+	"Fields": [
+		{
+			"FieldName": "ContractId",
+			"FieldType": "int"
+		},
+		{
+			"FieldName": "ContractSiteId",
+			"FieldType": "int"
+		},
+		{
+			"FieldName": "PaymentSchedule",
+			"FieldType": "list",
+			"FieldComplexType": [
+				{
+					"FieldName": "PaymentScheduleLineId",
+					"FieldType": "int"
+				},
+				{
+					"FieldName": "SiteId",
+					"FieldType": "int"
+				},
+				{
+					"FieldName": "RateName",
+					"FieldType": "string"
+				},
+				{
+					"FieldName": "RateNumber",
+					"FieldType": "int"
+				},
+				{
+					"FieldName": "DueDate",
+					"FieldType": "date"
+				},
+				{
+					"FieldName": "Installment",
+					"FieldType": "decimal"
+				},
+				{
+					"FieldName": "Principal",
+					"FieldType": "decimal"
+				},
+				{
+					"FieldName": "Interest",
+					"FieldType": "decimal"
+				}
+			]
+		}
+	],
+	"primaryKey": "ContractId",
+	"Topic":"ch.events.Charisma.Portal.Contracts.CharismaEventProcessor.IntegrationEvents.Contracts.PaymentScheduleUpdated",
+	"Sql":"exec [dbo].[uspL3PaymentScheduleUpdated] ?",
+	"EventName":"PaymentScheduleUpdated",
+	"Trigger":10
+}

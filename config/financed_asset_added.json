@@ -1,0 +1,41 @@
+{
+	"fields": [
+		{
+			"FieldName": "FinancedAssetId",
+			"FieldType": "int"
+		},
+		{
+			"fieldName": "FinancedAssetSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "ContractId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "ContractSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "AssetType",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "Description",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "Quantity",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "Amount",
+			"fieldType": "decimal"
+		}
+	],
+	"primaryKey":"FinancedAssetId",
+	"Topic":"ch.events.Charisma.Portal.Contracts.CharismaEventProcessor.IntegrationEvents.Contracts.FinancedAssetAddedOrUpdated",
+	"Sql":"exec [dbo].[uspL3FinancedAssetAddedOrUpdated] ?",
+	"EventName":"FinancedAssetAddedOrUpdated",
+	"Trigger":30
+}

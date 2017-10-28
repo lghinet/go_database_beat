@@ -1,0 +1,17 @@
+{
+	"fields": [
+		{
+			"FieldName": "PartnerId",
+			"FieldType": "int"
+		},
+		{
+			"fieldName": "PartnerName",
+			"fieldType": "string"
+		}
+	],
+	"primaryKey":"PartnerId",
+	"Topic":"ch.events.Charisma.Portal.Partners.CharismaEventProcessor.IntegrationEvents.Partners.PartnerCreated",
+	"Sql":"exec [dbo].[uspL3PartnerCreated] ?",
+	"EventName":"PartnerCreated",
+	"Trigger":30
+}

@@ -1,0 +1,85 @@
+{
+	"fields": [
+		{
+			"FieldName": "ContractId",
+			"FieldType": "int"
+		},
+		{
+			"fieldName": "SiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "PartnerId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "PartnerName",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "ContractType",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "ContractNumber",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "SigningDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "ActivationDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "EffectiveDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "TerminationDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "Address",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "ResponsiblePerson",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "DurationMonths",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "ContractCurrency",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "ContractValue",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "DownPayment",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "FinancedAmount",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "ResidualValue",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "Status",
+			"fieldType": "string"
+		}
+	],
+	"primaryKey":"ContractId",
+	"Topic":"ch.events.Charisma.Portal.Contracts.CharismaEventProcessor.IntegrationEvents.Contracts.ContractCreatedOrUpdated",
+	"Sql":"exec [dbo].[uspL3ContractCreatedOrUpdated] ?",
+	"EventName":"ContractCreatedOrUpdated",
+	"Trigger":5
+}

@@ -1,0 +1,81 @@
+{
+	"fields": [
+		{
+			"FieldName": "InsuranceId",
+			"FieldType": "int"
+		},
+		{
+			"fieldName": "InsuranceSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "ContractId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "ContractSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "FinancedAssetId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "FinancedAssetSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "PaymentScheduleId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "PaymentScheduleSiteId",
+			"fieldType": "int"
+		},
+		{
+			"fieldName": "InsuranceType",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "InsuranceNumber",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "InsuranceCompany",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "StartDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "EndDate",
+			"fieldType": "date"
+		},
+		{
+			"fieldName": "PremiumsCount",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "Currency",
+			"fieldType": "string"
+		},
+		{
+			"fieldName": "TotalPremium",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "InsuredValue",
+			"fieldType": "decimal"
+		},
+		{
+			"fieldName": "Status",
+			"fieldType": "string"
+		}
+	],
+	"primaryKey":"InsuranceId",
+	"Topic":"ch.events.Charisma.Portal.Contracts.CharismaEventProcessor.IntegrationEvents.Contracts.InsuranceCreated",
+	"Sql":"exec [dbo].[uspL3InsuranceCreated] ?",
+	"EventName":"InsuranceCreated",
+	"Trigger":30
+}
